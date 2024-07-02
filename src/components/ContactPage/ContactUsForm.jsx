@@ -52,12 +52,12 @@ const ContactUsForm = () => {
   return (
     <div>
       <form
-      className="flex flex-col gap-7"
+      className="flex flex-col gap-7 "
       onSubmit={handleSubmit(submitContactForm)}
     >
-      <div className="flex flex-col gap-5 lg:flex-row">
-        <div className="flex flex-col gap-2 lg:w-[48%]">
-          <label htmlFor="firstname" className="lable-style">
+      <div className="flex flex-col gap-5 lg:flex-row ">
+        <div className="flex flex-col gap-2 lg:w-[48%] ">
+          <label htmlFor="firstname" className="lable-style ">
             First Name
           </label>
           <input
@@ -65,7 +65,7 @@ const ContactUsForm = () => {
             name="firstname"
             id="firstname"
             placeholder="Enter first name"
-            className="form-style"
+            className="form-style bg-blue-200"
             {...register("firstname", { required: true })}
           />
           {errors.firstname && (
@@ -83,7 +83,7 @@ const ContactUsForm = () => {
             name="lastname"
             id="lastname"
             placeholder="Enter last name"
-            className="form-style"
+            className="form-style bg-blue-200"
             {...register("lastname")}
           />
         </div>
@@ -98,7 +98,7 @@ const ContactUsForm = () => {
           name="email"
           id="email"
           placeholder="Enter email address"
-          className="form-style"
+          className="form-style bg-blue-200"
           {...register("email", { required: true })}
         />
         {errors.email && (
@@ -109,7 +109,7 @@ const ContactUsForm = () => {
       </div>
 
       <div className="flex flex-col gap-2">
-        <label htmlFor="phonenumber" className="lable-style">
+        <label htmlFor="phonenumber" className="lable-style ">
           Phone Number
         </label>
 
@@ -120,7 +120,7 @@ const ContactUsForm = () => {
               name="firstname"
               id="firstname"
               placeholder="Enter first name"
-              className="form-style"
+              className="form-style bg-blue-200"
               {...register("countrycode", { required: true })}
             >
               {CountryCode.map((ele, i) => {
@@ -138,7 +138,7 @@ const ContactUsForm = () => {
               name="phonenumber"
               id="phonenumber"
               placeholder="12345 67890"
-              className="form-style"
+              className="form-style bg-blue-200"
               {...register("phoneNo", {
                 required: {
                   value: true,
@@ -167,7 +167,7 @@ const ContactUsForm = () => {
           cols="30"
           rows="7"
           placeholder="Enter your message here"
-          className="form-style"
+          className="form-style bg-blue-200 text-white"
           {...register("message", { required: true })}
         />
         {errors.message && (
