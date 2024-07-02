@@ -1,3 +1,11 @@
+##Deployment
+This project is deployed on Vercel. You can view the live version by clicking the link below:
+
+
+
+This button will take users directly to the live version of your project.
+
+
 Know more about this project - https://docs.google.com/document/d/19OZY8J9eDFGxU7w-xrXKS89KYI7EmWqz/edit
 
 #About  React & Tailwind CSS Starter Pack
