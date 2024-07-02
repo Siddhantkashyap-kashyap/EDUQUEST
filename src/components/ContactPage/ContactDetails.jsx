@@ -25,6 +25,7 @@ const contactDetails = [
   },
 ]
 
+
 const ContactDetails = () => {
   return (
     <div className="flex flex-col gap-6 rounded-xl bg-richblack-800 p-4 lg:p-6">
