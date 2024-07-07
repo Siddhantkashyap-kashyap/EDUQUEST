@@ -1,9 +1,9 @@
-import React from "react"
+import React from "react";
 
-import Footer from "../components/common/Footer"
-import ContactDetails from "../components/ContactPage/ContactDetails"
-import ContactForm from "../components/ContactPage/ContactForm"
-import ReviewSlider from "../components/common/ReviewSlider"
+import Footer from "../components/common/Footer";
+import ContactDetails from "../components/ContactPage/ContactDetails";
+import ContactForm from "../components/ContactPage/ContactForm";
+import ReviewSlider from "../components/common/ReviewSlider";
 
 const Contact = () => {
   return (
@@ -28,7 +28,7 @@ const Contact = () => {
       </div>
       <Footer />
     </div>
-  )
-}
+  );
+};
 
-export default Contact
+export default Contact;
