@@ -9,6 +9,9 @@ const { passwordUpdated } = require("../mail/templates/passwordUpdate");
 const Profile = require("../models/Profile");
 
 
+
+
+
 exports.sendotp = async (req, res) => {
     try{
         //1st STEP => fetching... eamil from req.body
@@ -23,6 +26,7 @@ exports.sendotp = async (req, res) => {
                 message:"User Already Exists",
             })
         } 
+
 
         //genearating... otp
         var otp = otpGenerator.generate(6, {
