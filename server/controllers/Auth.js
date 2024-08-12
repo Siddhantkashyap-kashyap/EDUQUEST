@@ -8,7 +8,7 @@ const mailSender = require("../utils/mailSender");
 const { passwordUpdated } = require("../mail/templates/passwordUpdate");
 const Profile = require("../models/Profile");
 
-//otp verification by SENDING OTP
+
 exports.sendotp = async (req, res) => {
     try{
         //1st STEP => fetching... eamil from req.body
