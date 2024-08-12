@@ -51,7 +51,8 @@ exports.sendotp = async (req, res) => {
         //     result = await OTP.findOne({otp: otp});
         // }
 
-        const result = await OTP.findOne({ otp: otp });
+
+	    const result = await OTP.findOne({ otp: otp });
 		// console.log("Result is Generate OTP Func");
 		console.log("--------------OTP-------------", otp);
 		console.log("Result", result);
@@ -72,6 +73,7 @@ exports.sendotp = async (req, res) => {
             success:true,
             message:"OTP Sended SUCCESSFULLY !!",
         })
+	    
 
     } catch(error){
         console.log(error.message);
