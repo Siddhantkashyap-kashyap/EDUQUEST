@@ -16,7 +16,7 @@ exports.contactUsController = async (req, res) => {
 
     const emailRes2 = await mailSender(
       process.env.MAIL_USER,
-      "You Got Some Feddback Regarding STUDYNOTION !!",
+      "You Got Some Feddback Regarding Eduquest !!",
       getFeedback(email, firstname, lastname, message, phoneNo, countrycode)
     )
 
